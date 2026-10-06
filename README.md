@@ -109,11 +109,15 @@ The application will be accessible at: **`http://localhost:5000`**
 
 
 ## 🎨 IMAGES
-![Alt text](/static/images/front.jpg?raw=true "Front")
+<!-- Centered and resized image -->
+<p align="center">
+  <img src="./static/images/front.jpeg" alt="Project Screenshot" width="500">
+</p>
 
-![Alt text](/static/images/experience.jpg?raw=true "Experience")
+<p align="center">
+  <img src="./static/images/experience.jpeg" alt="Experience Screenshot" width="500">
+</p>
 
-![Python](https://shields.io)
 
 ## 🛠️ TODO
 
