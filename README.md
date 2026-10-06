@@ -8,7 +8,7 @@ aitokenshub
 
 A modern, high-performance Flask application showcasing AI engineering experience, models deployed, token consumption metrics, and evaluation star rankings.
 
-Designed with the sleek dark aesthetic of `~/dev/appCopilot/index.html` (Aurora theme), backed by MySQL running in Docker container **`geminiDB`**.
+Designed with the sleek dark aesthetic of Aurora theme, backed by MySQL running in Docker container **`DB`**.
 
 ---
 
@@ -39,30 +39,27 @@ Designed with the sleek dark aesthetic of `~/dev/appCopilot/index.html` (Aurora 
 
 ## 🚀 Quick Start
 
-### 1. MySQL Container (`geminiDB`)
+### 1. MySQL Container (`DB_aitokenshub`)
 
-The database runs in a Docker container named `geminiDB`:
+The database runs in a Docker container named `DB_aitokenshub`:
 
 ```bash
 docker run -d \
-  --name geminiDB \
+  --name DB \
   -p 3306:3306 \
-  -e MYSQL_ROOT_PASSWORD=rootpassword \
-  -e MYSQL_DATABASE=gemini_ai \
-  -e MYSQL_USER=gemini \
-  -e MYSQL_PASSWORD=geminisecret \
+  -e MYSQL_ROOT_PASSWORD=password \
+  -e MYSQL_DATABASE=bd_aitokenshub \
+  -e MYSQL_USER=aitokenshub \
+  -e MYSQL_PASSWORD=aitokenshubsecret \
   mysql:8.0
 ```
 
 To verify the container is running:
 ```bash
-docker ps --filter "name=geminiDB"
+docker ps --filter "name=DB_aitokenshub"
 ```
 
 ### 2. Activate Virtual Environment & Run App
-
-```bash
-cd /home/zveb/dev/gemini_flask
 
 # Activate virtual environment
 source .venv/bin/activate
@@ -107,3 +104,9 @@ The application will be accessible at: **`http://localhost:5000`**
 
 - `GET /api/experiences`: Returns all AI experiences as JSON.
 - `GET /api/stats`: Returns aggregated token volume, model count, and average stars.
+
+
+## <wa-icon name="image"></wa-icon> IMAGES
+![Alt text](/static/images/front.jpg?raw=true "Front")
+
+![Alt text](/static/images/experience.jpg?raw=true "Experience")
