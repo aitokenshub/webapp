@@ -2,6 +2,7 @@
 A showoom of projects using AI tools to show the Tokens used on each Agents
 
 
+
 # Gemini AI Experience & Model Portfolio
 
 aitokenshub
@@ -57,11 +58,12 @@ docker run -d \
 To verify the container is running:
 ```bash
 docker ps --filter "name=DB_aitokenshub"
-```
+
 
 ### 2. Activate Virtual Environment & Run App
 
 # Activate virtual environment
+
 source .venv/bin/activate
 
 # Launch the Flask server
@@ -106,7 +108,13 @@ The application will be accessible at: **`http://localhost:5000`**
 - `GET /api/stats`: Returns aggregated token volume, model count, and average stars.
 
 
-## <wa-icon name="image"></wa-icon> IMAGES
+## 🎨 IMAGES
 ![Alt text](/static/images/front.jpg?raw=true "Front")
 
 ![Alt text](/static/images/experience.jpg?raw=true "Experience")
+
+![Python](https://shields.io)
+
+## 🛠️ TODO
+
+Add more fields to the experience for private use of the user
