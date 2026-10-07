@@ -3,9 +3,9 @@ A showoom of projects using AI tools to show the Tokens used on each Agents
 
 
 
-# Gemini AI Experience & Model Portfolio
+# AI Experience & Model Portfolio
 
-aitokenshub
+# aitokenshub
 
 A modern, high-performance Flask application showcasing AI engineering experience, models deployed, token consumption metrics, and evaluation star rankings.
 
@@ -42,7 +42,7 @@ Designed with the sleek dark aesthetic of Aurora theme, backed by MySQL running 
 
 ### 1. MySQL Container (`DB_aitokenshub`)
 
-The database runs in a Docker container named `DB_aitokenshub`:
+# The database runs in a Docker container named `DB_aitokenshub`:
 
 ```bash
 docker run -d \
@@ -55,22 +55,24 @@ docker run -d \
   mysql:8.0
 ```
 
-To verify the container is running:
+# To verify the container is running:
 ```bash
 docker ps --filter "name=DB_aitokenshub"
-
+```
 
 ### 2. Activate Virtual Environment & Run App
 
 # Activate virtual environment
-
+```bash
 source .venv/bin/activate
+```
 
 # Launch the Flask server
+```bash
 python3 app.py
 ```
 
-The application will be accessible at: **`http://localhost:5000`**
+# The application will be accessible at: **`http://localhost:5000`**
 
 ---
 
@@ -121,4 +123,6 @@ The application will be accessible at: **`http://localhost:5000`**
 
 ## 🛠️ TODO
 
-Add more fields to the experience for private use of the user
+1. Add more fields to the experience for private use
+2. Add comments on each experience
+3. Add votes/score on each experience
